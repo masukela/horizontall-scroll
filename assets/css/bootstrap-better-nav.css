@@ -1,0 +1,382 @@
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+#side-menu {
+  display: none;
+  position: fixed;
+  width: 300px;
+  top: 0;
+  right: -300px;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 999999000000000;
+  background: #000000;
+  padding: 20px 30px;
+  color: #f4f4ed;
+  transition: 0.9s;
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  opacity: 0.96;
+  background-color: #050505;
+}
+
+body.side-menu-visible #side-menu {
+  transform: translateX(-300px);
+}
+
+#side-menu .contents {
+  margin-top: 80px;
+}
+
+#side-menu .nav-link {
+  color: rgba(255,255,255,0.85);
+  font-size: 30px;
+  font-weight: 800;
+  padding: 12px 0;
+  font-family: poppins;
+  font-weight: 500;
+  letter-spacing: 0;
+  height: 37px;
+}
+
+#side-menu .nav-link:hover {
+  opacity: 0.4;
+  color: rgba(243,244,231,0.45);
+  transition: .2s;
+}
+
+#side-menu .nav-link:hover {
+  transform: translateX(-5px);
+  transition: .2s;
+}
+
+#side-menu .close {
+  font-size: 50px;
+  font-weight: normal;
+  color: white;
+}
+
+.side-menu-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.69);
+  z-index: 100;
+  display: none;
+}
+
+#side-menu.side-menu-left {
+  right: auto;
+  left: -300px;
+  transition-duration: .9s;
+}
+
+body.side-menu-visible #side-menu.side-menu-left {
+  transform: translateY(300px);
+  transition-duration: .9s;
+}
+
+#divtwo {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../assets/img/graffiti.jpeg?h=ca73d7ad54daf480feed617b39b2b8a5");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.col.two {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: rgba(0,0,0,0.96);
+}
+
+.divfive {
+  min-height: 100vh;
+  background-image: url("../../assets/img/feet.jpeg?h=b8799706dd0cf26d6f03aa937d966231");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.col.five {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgba(0,0,0,0.95);
+}
+
+.content {
+  z-index: 1;
+  width: 4000px;
+  height: 100vh;
+}
+
+.creativity {
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  text-shadow: 1px 1px rgb(76,207,207);
+  padding-bottom: 3rem;
+  line-height: 110px;
+  font-size: 3vw;
+}
+
+.port {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 500;
+  filter: invert(0%);
+  text-shadow: 1px 1px rgb(76,207,207);
+  display: block;
+  color: rgb(33,37,41);
+}
+
+.skills-head {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 500;
+  filter: invert(0%);
+  text-shadow: 1px 1px rgb(76,207,207);
+  display: block;
+  font-size: 4rem;
+}
+
+.back {
+  filter: blur(0px) grayscale(47%) hue-rotate(0deg) invert(0%) saturate(100%);
+  opacity: 1;
+}
+
+.portfolio-para {
+  font-size: 1rem;
+  font-family: Oswald, sans-serif;
+  margin-left: 3px;
+  min-width: 200px;
+  width: 250px;
+  font-weight: 300;
+}
+
+#chart_div {
+  background-color: rgba(255,255,255,0);
+}
+
+#donutchart {
+  width: 500px!important;
+  height: 50vh;
+  margin-left: 50px;
+  font-family: 'Oswald';
+  padding-bottom: 60px;
+  display: block;
+  min-width: 200px;
+  float: left!important;
+  /*clear: none;*/
+  margin-right: 50px;
+}
+
+.d-flex.d-lg-flex.align-items-center.align-items-sm-center.align-items-md-center.align-items-lg-center.content.scroll {
+  z-index: 3000;
+  width: 3000px;
+}
+
+.skills-icon {
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 15px;
+  opacity: .8;
+}
+
+.about:hover .intro {
+  opacity: 1;
+}
+
+.chrome {
+  width: 35px;
+  filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) sepia(100%);
+  opacity: 0.62;
+  margin-top: 15px;
+  margin-left: 18px;
+  margin-bottom: 15px;
+}
+
+chrome-heading {
+}
+
+.chrome-heading {
+  font-family: 'Oswald';
+  font-size: 15px;
+  margin-left: 25px;
+  margin-right: 0;
+}
+
+.share {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 500;
+  filter: invert(0%);
+  text-shadow: 1px 1px rgb(76,207,207);
+  display: block;
+  font-size: 2.5rem;
+  padding: 10px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.technology {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 500;
+  filter: invert(0%);
+  text-shadow: 1px 1px rgb(76,207,207);
+  display: block;
+  font-size: 3.5rem;
+  padding: 10px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.technology {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 500;
+  filter: invert(0%);
+  text-shadow: 1px 1px rgb(76,207,207);
+  display: block;
+  font-size: 3.5rem;
+  padding: 10px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.cont {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 500;
+  filter: invert(0%);
+  text-shadow: 1px 1px rgb(76,207,207);
+  display: block;
+  font-size: 3.5rem;
+  padding: 10px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.d-block.float-left.skills {
+  width: 200px!important;
+  padding: 10px;
+  height: 50vh;
+  margin-left: 3rem;
+  margin-right: 60px;
+}
+
+.fa.fa-long-arrow-right.arrow {
+}
+
+.fa.fa-chrome {
+  font-size: 25px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.icon.ion-social-sass {
+  font-size: 25px;
+}
+
+.icon.ion-social-javascript {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.la.la-git-square {
+  margin-left: 10px;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.typcn.typcn-code-outline {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.tech-para {
+  font-weight: 300;
+  margin-left: 25px;
+  font-family: Oswald, sans-serif;
+  font-size: 1rem;
+  width: 200px;
+}
+
+#youtube-icon {
+  margin-left: 25px;
+  font-size: 25px;
+}
+
+.fab.fa-github-square {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.fab.fa-facebook-f {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.fab.fa-git-square {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.icon.ion-android-remove {
+}
+
+#share {
+  margin-left: 20px;
+  filter: brightness(116%) grayscale(76%);
+}
+
+.icon.ion-ios-people.our-team {
+  font-size: 26px;
+}
+
+.fa.fa-lightbulb-o.light {
+  font-size: 28px;
+}
+
+.material-icons.about-us {
+}
+
+.fa.fa-users.our-team {
+  font-size: 23px;
+}
+
+.fa.fa-user-secret.about-us {
+  font-size: 26px;
+}
+
+.fa.fa-gears.process {
+  font-size: 25px;
+}
+
+.fa.fa-comments-o.chat {
+  font-size: 24px;
+}
+
+#navicon {
+  color: rgba(0,0,0,0.66);
+  font-size: 1.2rem;
+}
+
+.fa.fa-gamepad.our-team {
+  font-size: 25px;
+}
+
+.d-block.float-left.sound {
+  width: 320px;
+  height: 50vh;
+  background-color: rgba(181,52,52,0);
+  margin-left: 60px;
+  position: static;
+  clear: none;
+  float: left!important;
+  padding: 10px;
+  display: block;
+  min-width: 220px;
+}
+
+.sound-control {
+  color: rgb(23,111,200);
+}
+
